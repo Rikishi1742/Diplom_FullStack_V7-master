@@ -1,9 +1,9 @@
-const EducationLessons = () => {
+const EducationLessons = (name, description) => {
 
 
     return (
         <>
-            
+
         </>
     );
 }
