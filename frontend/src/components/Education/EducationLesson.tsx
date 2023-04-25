@@ -1,10 +1,12 @@
-const EducationLesson = (name, description) => {
+import { useState } from "react";
+
+const EducationLesson = (props) => {
 
     return (
-        <>
-            <h2>{name}</h2>
-            <p>{description}</p>
-        </>
+        <div className="LessonSection">
+            <h2>{props.items.lessonName}</h2>
+            <p>{props.items.description}</p>
+        </div>
     );
 }
 
