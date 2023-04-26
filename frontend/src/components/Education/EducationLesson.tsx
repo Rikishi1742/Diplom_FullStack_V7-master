@@ -19,12 +19,12 @@ const EducationLesson = (props) => {
             </div>
 
             {loginStatus == LoginStatus.LoggedOut && <>
-                <Button Value="Test Yourself" href="/login"></Button>
+                <Button Value="Read more" href="/login"></Button>
                 </>
             }
 
             {loginStatus == LoginStatus.LoggedIn && <>
-                <Button Value="Test Yourself" href='/course'></Button>
+                <Button Value="Read more" href='/course'></Button>
                 </>
             }
         </div>

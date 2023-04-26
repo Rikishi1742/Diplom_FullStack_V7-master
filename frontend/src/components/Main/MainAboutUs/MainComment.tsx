@@ -1,10 +1,12 @@
 import { LazyMotion } from 'framer-motion';
 import './MainComment.css';
 import Stars from './CommentStars/Stars';
+import LazyShow from '../../Anims/LazyShow';
 
 const MainComment = props => {
 
     return (
+        <LazyShow>
             <div className={"Comment"}>
 
                 <div className={"Person"}>
@@ -16,8 +18,10 @@ const MainComment = props => {
                     <p>{props.commentText}</p>
                     <Stars quantity={5} />
                 </div>
-                
+
             </div>
+        </LazyShow>
+
     );
 }
 
