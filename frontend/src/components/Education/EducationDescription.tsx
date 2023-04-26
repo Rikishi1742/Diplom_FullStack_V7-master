@@ -7,33 +7,54 @@ const EducationDescription = () => {
             id: 1,
             lessonName: "Broken Access Control",
             description: "Access control enforces policy such that users cannot act outside of their intended permissions.",
-            testsId: [1, 2, 3]
+            testsId: [1],
+
+            PrevalenceLevel: "COMMON",
+            ExploitAbilityLevel: "EASY",
+            ImpactLevel: "HARMFUL",
 
         },
         {
             id: 2,
             lessonName: "Cryptographic Failures",
             description: "Many web applications and APIs do not properly protect sensitive data with strong encryption",
-            testsId: [4]
+            testsId: [2],
+
+            PrevalenceLevel: "COMMON",
+            ExploitAbilityLevel: "EASY",
+            ImpactLevel: "HARMFUL",
         },
         {
             id: 3,
             lessonName: "Injection",
             description: "Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query",
-            testsId: [5, 6]
+            testsId: [3],
+
+            PrevalenceLevel: "COMMON",
+            ExploitAbilityLevel: "EASY",
+            ImpactLevel: "HARMFUL",
         },
         {
             id: 4,
-            lessonName: "Broken Access Control",
-            description: "Access control enforces policy such that users cannot act outside of their intended permissions.",
-            testsId: [7, 8]
+            lessonName: "Security Misconfiguration",
+            description: "Using ad hoc configuration standards can lead to default accounts being left in place, open cloud storage, misconfigured HTTP headers, and verbose error messages containing sensitive information",
+            testsId: [4],
+
+            PrevalenceLevel: "COMMON",
+            ExploitAbilityLevel: "EASY",
+            ImpactLevel: "HARMFUL",
         },
         {
             id: 5,
-            lessonName: "Broken Access Control",
-            description: "Access control enforces policy such that users cannot act outside of their intended permissions.",
-            testsId: [9, 10, 11]
+            lessonName: "Insecure Design",
+            description: "Pre-coding activities are critical for the design of secure software. The design phase of you development lifecycle should gather security requirements and model threats, and development time should be budgeted to allow for these requirements to be met. ",
+            testsId: [5],
+
+            PrevalenceLevel: "COMMON",
+            ExploitAbilityLevel: "EASY",
+            ImpactLevel: "HARMFUL",
         },
+    
     ]
 
     if (Lessons.length === 0) {
@@ -41,7 +62,7 @@ const EducationDescription = () => {
     }
 
     return (
-        <div className='Container'>
+        <div className='Container' style={{height: "auto", marginTop: "15vh", marginBottom: "15vh"}}>
             <div>
                 {Lessons.map((lesson) => (
                     <EducationLesson
