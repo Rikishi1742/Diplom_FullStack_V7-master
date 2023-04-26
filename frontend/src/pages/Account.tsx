@@ -1,10 +1,14 @@
 import React from 'react'
+import { useParams } from 'react-router-dom';
 
 type Props = {}
 
 function Account({}: Props) {
+
+  const { UserId } = useParams();
+
   return (
-    <div>Account</div>
+    <div>Account {UserId} </div>
   )
 }
 

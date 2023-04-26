@@ -26,9 +26,9 @@ function AppRoutes({ children }: Props) {
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/aboutUs" element={<AboutUs />} />
                 <Route path="/education" element={<Education />} />
-                <Route path="/account" element={<Account />} />
+                <Route path="/account/:UserId" element={<Account />} />
                 <Route path="/settings" element={<Settings />} />
-                <Route path="/course" element={<Course />} />
+                <Route path="/courseId/:id" element={<Course />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </Suspense>

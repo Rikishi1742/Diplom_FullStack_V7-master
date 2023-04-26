@@ -70,7 +70,7 @@ const NavItems = ({ children }: Props) => {
                     </NavLink>  
 
                     {loginStatus == LoginStatus.LoggedIn && <>
-                        <NavLink href="/Account" active><p>Account</p></NavLink> 
+                        <NavLink href={"/account/" + userPayload.user_id} active><p>Account</p></NavLink> 
                         <NavLink href="/login" active>
                         <p onClick={() => {setUserDataByDispatch("LOGOUT", null)
                         deleteTokens()

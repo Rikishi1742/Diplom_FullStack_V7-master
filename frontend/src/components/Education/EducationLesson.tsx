@@ -24,7 +24,7 @@ const EducationLesson = (props) => {
             }
 
             {loginStatus == LoginStatus.LoggedIn && <>
-                <Button Value="Read more" href='/course'></Button>
+                <Button Value="Read more" href={'/courseId/'+props.items.id}></Button>
                 </>
             }
         </div>

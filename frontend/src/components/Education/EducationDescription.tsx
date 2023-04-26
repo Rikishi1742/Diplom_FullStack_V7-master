@@ -8,7 +8,7 @@ const EducationDescription = () => {
             lessonName: "Broken Access Control",
             description: "Access control enforces policy such that users cannot act outside of their intended permissions.",
             testsId: [1],
-
+            
             PrevalenceLevel: "COMMON",
             ExploitAbilityLevel: "EASY",
             ImpactLevel: "HARMFUL",
