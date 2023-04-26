@@ -1,9 +1,18 @@
 .TestButton {
-    width: 250px;
+    width: 32%;
     height: 250px;
     
     background: #66CC66;
-    border-radius: 25px;
     
     margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.TestButton h2 {
+    font-size: 24px;
+    line-height: 25px;
+    text-align: center;
 }

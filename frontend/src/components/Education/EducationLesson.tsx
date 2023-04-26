@@ -1,17 +1,35 @@
+import Button from '../Elements/Button';
 import './EducationLesson.css'
 import TestButton from './TestButton';
 
-const EducationLesson = (props) => {
+import { UserContext, LoginStatus } from "../../context/UserContext";
+import { useContext } from 'react';
 
+const EducationLesson = (props) => {
+    const { userPayload, loginStatus, setUserDataByDispatch,  } = useContext(UserContext);
+    
     return (
-        <div className="LessonSection"> 
+        <>
+            <div className="LessonSection"> 
             <h2>{props.items.lessonName}</h2>
             <p>{props.items.description}</p>
 
             <div className='TestsSection'>
-                <TestButton items={props.items.testsId}/>
+                <TestButton items={props.items}/>
             </div>
+
+            {loginStatus == LoginStatus.LoggedOut && <>
+                <Button Value="Test Yourself" href="/login"></Button>
+                </>
+            }
+
+            {loginStatus == LoginStatus.LoggedIn && <>
+                <Button Value="Test Yourself" href='/course'></Button>
+                </>
+            }
         </div>
+        </>
+        
     );
 }
 

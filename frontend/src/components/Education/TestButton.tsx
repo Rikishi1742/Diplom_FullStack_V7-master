@@ -10,16 +10,27 @@ const TestButton = (props) => {
 
     return (
         <>
-            {ButtonArray.map((testId) => (
-                <div className="TestButton">
-                    
+            <div className="TestButton">
+                <h2>PREVALENCE  
                     {
-                    
-                    testId
-                    
+                    props.items.PrevalenceLevel
                     }
-                </div>
-            ))}
+                </h2>
+            </div>
+            <div className="TestButton">
+                <h2>EXPLOITABILITY  
+                    {
+                    props.items.ExploitAbilityLevel
+                    }
+                </h2>
+            </div>
+            <div className="TestButton">
+                <h2>IMPACT  
+                    {
+                    props.items.ImpactLevel
+                    }
+                </h2>
+            </div>
         </>
     );
 
