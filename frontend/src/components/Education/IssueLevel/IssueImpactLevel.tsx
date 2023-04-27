@@ -1,11 +1,11 @@
-const IconPrevalence = () => {
+const IconImpact = () => {
     return (
-        <img src="./PrevalenceLevel.svg" alt="" />
+        <img src="./ImpactLevel.svg" alt="" />
     );
 }
 
 
-const IssuePrevelanceLevel = (props) => {
+const IssueImpactLevell = (props) => {
     let Level = props.quantity;
     let LevelElem = [];
 
@@ -18,7 +18,7 @@ const IssuePrevelanceLevel = (props) => {
     }
 
     for (let i = 0; i < Level; i++) {
-        LevelElem[i] = <IconPrevalence key={i} />
+        LevelElem[i] = <IconImpact key={i} />
     }
 
     if (Level < 3) {
@@ -36,4 +36,4 @@ const IssuePrevelanceLevel = (props) => {
     );
 }
 
-export default IssuePrevelanceLevel
+export default IssueImpactLevell

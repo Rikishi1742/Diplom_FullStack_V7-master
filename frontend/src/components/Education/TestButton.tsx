@@ -1,4 +1,5 @@
 import IssueExploitabilitLevel from "./IssueLevel/IssueExploitAbilityLevel";
+import IssueImpactLevell from "./IssueLevel/IssueImpactLevel";
 import IssuePrevelanceLevel from "./IssueLevel/IssuePrevelanceLevel";
 import "./TestButton.css"
 
@@ -49,6 +50,9 @@ const TestButton = (props) => {
             </div>
             <div className="TestButton">
                 <h2>IMPACT {ImpactLevelText}</h2>
+                <div className="LevelIcon">
+                    <IssueImpactLevell quantity={props.items.ImpactLevel} />
+                </div>
             </div>
         </>
     );

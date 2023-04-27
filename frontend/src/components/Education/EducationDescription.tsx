@@ -22,7 +22,7 @@ const EducationDescription = () => {
 
             PrevalenceLevel: 3,
             ExploitAbilityLevel: 2,
-            ImpactLevel: "HARMFUL",
+            ImpactLevel: 1,
         },
         {
             id: 3,
@@ -32,7 +32,7 @@ const EducationDescription = () => {
 
             PrevalenceLevel: 3,
             ExploitAbilityLevel: 2,
-            ImpactLevel: "HARMFUL",
+            ImpactLevel: 2,
         },
         {
             id: 4,
@@ -42,7 +42,7 @@ const EducationDescription = () => {
 
             PrevalenceLevel: 3,
             ExploitAbilityLevel: 1,
-            ImpactLevel: "HARMFUL",
+            ImpactLevel: 3,
         },
         {
             id: 5,
@@ -52,7 +52,7 @@ const EducationDescription = () => {
 
             PrevalenceLevel: 3,
             ExploitAbilityLevel: 3,
-            ImpactLevel: "HARMFUL",
+            ImpactLevel: 1,
         },
     
     ]
