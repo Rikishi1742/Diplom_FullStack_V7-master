@@ -1,5 +1,5 @@
 import IssueExploitabilitLevel from "./IssueLevel/IssueExploitAbilityLevel";
-import IssuePrevelanceLevel from "./IssueLevel/IssueExploitAbilityLevel";
+import IssuePrevelanceLevel from "./IssueLevel/IssuePrevelanceLevel";
 import "./TestButton.css"
 
 const TestButton = (props) => {
@@ -44,7 +44,7 @@ const TestButton = (props) => {
             <div className="TestButton">
                 <h2>EXPLOITABILITY {ExploitAbilityLevelText}</h2>
                 <div className="LevelIcon">
-                    <IssueExploitabilitLevel quantity={props.items.ExploitAbilityLevel} />
+                    <IssueExploitabilitLevel quantity={props.items.PrevalenceLevel} />
                 </div>
             </div>
             <div className="TestButton">
