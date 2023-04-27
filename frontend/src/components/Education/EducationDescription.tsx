@@ -65,7 +65,7 @@ const EducationDescription = () => {
         <div className='Container' style={{height: "auto", marginTop: "15vh", marginBottom: "15vh"}}>
             <div>
                 {Lessons.map((lesson) => (
-                    <EducationLesson
+                    <EducationLesson key={lesson.id}
                     items={lesson}
                     />
                 ))}

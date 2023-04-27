@@ -10,20 +10,11 @@ import { deleteTokens } from "../../manage-tokens";
 import BurgerMenu from "./BurgerMenu";
 import Burger from "./Burger";
 
-const variants = {
-    open: {
-      transition: { staggerChildren: 0.07, delayChildren: 0.2 }
-    },
-    closed: {
-      transition: { staggerChildren: 0.05, staggerDirection: -1 }
-    }
-  };
-
 type Props = {
     children?: React.ReactNode
 }
 
-const NavItems = ({ children }: Props) => {
+const NavItems = () => {
 
     const navigate = useNavigate();
     const { userPayload, loginStatus, setUserDataByDispatch,  } = useContext(UserContext);

@@ -14,25 +14,19 @@ const TestButton = (props) => {
     return (
         <>
             <div className="TestButton">
-                <h2>PREVALENCE 
-                    {
-                    PrevalenceLevelText
-                    }
-                </h2>
+                <h2>PREVALENCE {PrevalenceLevelText}</h2>
+                <div className="LevelIcon">
+                    <img src="./PrevalenceLevel.svg" alt="" />
+                    <img src="./PrevalenceLevel.svg" alt="" />
+                    <img src="./PrevalenceLevel.svg" alt="" />
+                </div>
+                
             </div>
             <div className="TestButton">
-                <h2>EXPLOITABILITY 
-                    {
-                    props.items.ExploitAbilityLevel
-                    }
-                </h2>
+                <h2>EXPLOITABILITY {props.items.ExploitAbilityLevel}</h2>
             </div>
             <div className="TestButton">
-                <h2>IMPACT 
-                    {
-                    props.items.ImpactLevel
-                    }
-                </h2>
+                <h2>IMPACT {props.items.ImpactLevel}</h2>
             </div>
         </>
     );
