@@ -9,7 +9,7 @@ const EducationDescription = () => {
             description: "Access control enforces policy such that users cannot act outside of their intended permissions.",
             testsId: [1],
             
-            PrevalenceLevel: "COMMON",
+            PrevalenceLevel: 2,
             ExploitAbilityLevel: "EASY",
             ImpactLevel: "HARMFUL",
 
@@ -20,7 +20,7 @@ const EducationDescription = () => {
             description: "Many web applications and APIs do not properly protect sensitive data with strong encryption",
             testsId: [2],
 
-            PrevalenceLevel: "COMMON",
+            PrevalenceLevel: 3,
             ExploitAbilityLevel: "EASY",
             ImpactLevel: "HARMFUL",
         },
@@ -30,7 +30,7 @@ const EducationDescription = () => {
             description: "Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query",
             testsId: [3],
 
-            PrevalenceLevel: "COMMON",
+            PrevalenceLevel: 3,
             ExploitAbilityLevel: "EASY",
             ImpactLevel: "HARMFUL",
         },
@@ -40,7 +40,7 @@ const EducationDescription = () => {
             description: "Using ad hoc configuration standards can lead to default accounts being left in place, open cloud storage, misconfigured HTTP headers, and verbose error messages containing sensitive information",
             testsId: [4],
 
-            PrevalenceLevel: "COMMON",
+            PrevalenceLevel: 3,
             ExploitAbilityLevel: "EASY",
             ImpactLevel: "HARMFUL",
         },
@@ -50,7 +50,7 @@ const EducationDescription = () => {
             description: "Pre-coding activities are critical for the design of secure software. The design phase of you development lifecycle should gather security requirements and model threats, and development time should be budgeted to allow for these requirements to be met. ",
             testsId: [5],
 
-            PrevalenceLevel: "COMMON",
+            PrevalenceLevel: 3,
             ExploitAbilityLevel: "EASY",
             ImpactLevel: "HARMFUL",
         },
