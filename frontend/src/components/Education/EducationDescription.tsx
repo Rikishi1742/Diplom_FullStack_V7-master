@@ -10,8 +10,8 @@ const EducationDescription = () => {
             testsId: [1],
             
             PrevalenceLevel: 2,
-            ExploitAbilityLevel: "EASY",
-            ImpactLevel: "HARMFUL",
+            ExploitAbilityLevel: 2,
+            ImpactLevel: 2,
 
         },
         {
@@ -21,7 +21,7 @@ const EducationDescription = () => {
             testsId: [2],
 
             PrevalenceLevel: 3,
-            ExploitAbilityLevel: "EASY",
+            ExploitAbilityLevel: 2,
             ImpactLevel: "HARMFUL",
         },
         {
@@ -31,7 +31,7 @@ const EducationDescription = () => {
             testsId: [3],
 
             PrevalenceLevel: 3,
-            ExploitAbilityLevel: "EASY",
+            ExploitAbilityLevel: 2,
             ImpactLevel: "HARMFUL",
         },
         {
@@ -41,7 +41,7 @@ const EducationDescription = () => {
             testsId: [4],
 
             PrevalenceLevel: 3,
-            ExploitAbilityLevel: "EASY",
+            ExploitAbilityLevel: 1,
             ImpactLevel: "HARMFUL",
         },
         {
@@ -51,7 +51,7 @@ const EducationDescription = () => {
             testsId: [5],
 
             PrevalenceLevel: 3,
-            ExploitAbilityLevel: "EASY",
+            ExploitAbilityLevel: 3,
             ImpactLevel: "HARMFUL",
         },
     

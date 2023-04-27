@@ -1,7 +1,12 @@
+import IssueExploitabilitLevel from "./IssueLevel/IssueExploitAbilityLevel";
+import IssuePrevelanceLevel from "./IssueLevel/IssueExploitAbilityLevel";
 import "./TestButton.css"
 
 const TestButton = (props) => {
+
     let PrevalenceLevelText = "";
+    let ExploitAbilityLevelText = "";
+    let ImpactLevelText = "";
 
     if (props.items.PrevalenceLevel == 1) {
         PrevalenceLevelText = " RARE";
@@ -11,22 +16,39 @@ const TestButton = (props) => {
         PrevalenceLevelText = " COMMON";
     }
 
+    if (props.items.ExploitAbilityLevel == 1) {
+        ExploitAbilityLevelText = " DIFFICULT";
+    } else if (props.items.ExploitAbilityLevel == 2) {
+        ExploitAbilityLevelText = " MODERATE";
+    } else {
+        ExploitAbilityLevelText = " EASY";
+    }
+
+    if (props.items.ImpactLevel == 1) {
+        ImpactLevelText = " WORRYING";
+    } else if (props.items.ImpactLevel == 2) {
+        ImpactLevelText = " HARMFUL";
+    } else {
+        ImpactLevelText = " DEVASTATING";
+    }
+
     return (
         <>
             <div className="TestButton">
                 <h2>PREVALENCE {PrevalenceLevelText}</h2>
                 <div className="LevelIcon">
-                    <img src="./PrevalenceLevel.svg" alt="" />
-                    <img src="./PrevalenceLevel.svg" alt="" />
-                    <img src="./PrevalenceLevel.svg" alt="" />
+                    <IssuePrevelanceLevel quantity={props.items.PrevalenceLevel} />
                 </div>
                 
             </div>
             <div className="TestButton">
-                <h2>EXPLOITABILITY {props.items.ExploitAbilityLevel}</h2>
+                <h2>EXPLOITABILITY {ExploitAbilityLevelText}</h2>
+                <div className="LevelIcon">
+                    <IssueExploitabilitLevel quantity={props.items.ExploitAbilityLevel} />
+                </div>
             </div>
             <div className="TestButton">
-                <h2>IMPACT {props.items.ImpactLevel}</h2>
+                <h2>IMPACT {ImpactLevelText}</h2>
             </div>
         </>
     );
