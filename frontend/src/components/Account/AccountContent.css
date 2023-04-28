@@ -2,11 +2,19 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: auto;
+    height: 50%;
+}
+
+.AccountContent div {
+    height: 100%;
 }
 
 .AccountContent div:first-child {
-    width: 35%;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
 .AccountContent div:last-child {
@@ -16,4 +24,9 @@
 .AccountContent div:first-child img {
     width: 100%;
     height: 100%;
+}
+
+.AccountContent h2 {
+    color: #fff;
+    text-align: center;
 }
