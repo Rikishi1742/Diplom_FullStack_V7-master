@@ -7,8 +7,8 @@ function HomePage({}: Props) {
   const { id } = useParams();
   
   return (
-    <div className="slides">
-      Course {id}
+    <div className='Container'>
+      {id}
     </div>
   )
 }

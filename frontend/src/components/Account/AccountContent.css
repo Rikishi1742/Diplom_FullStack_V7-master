@@ -3,6 +3,7 @@
     justify-content: space-between;
     width: 100%;
     height: 50%;
+    margin-top: 100px;
 }
 
 .AccountContent div {
@@ -27,6 +28,11 @@
 }
 
 .AccountContent h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.AccountContent h3 {
     color: #fff;
     text-align: center;
 }

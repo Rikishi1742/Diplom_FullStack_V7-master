@@ -14,6 +14,7 @@ const AccountContent = () => {
                 <div>
                     <img src="../ImgPerson/1.svg" alt="" />
                     <h2>{userPayload.username}</h2>
+                    <h3>ID: {UserId}</h3>
                 </div>
 
                 <div>
