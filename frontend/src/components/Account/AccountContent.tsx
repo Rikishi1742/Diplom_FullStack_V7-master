@@ -8,7 +8,7 @@ const AccountContent = () => {
         <div className="Container">
             <div className="AccountContent">
                 <div>
-                    
+                    <img src="./AccountLogo.png" alt="" />
                 </div>
 
                 <div>

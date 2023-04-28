@@ -12,3 +12,8 @@
 .AccountContent div:last-child {
     width: 55%;
 }
+
+.AccountContent div:first-child img {
+    width: 100%;
+    height: 100%;
+}
