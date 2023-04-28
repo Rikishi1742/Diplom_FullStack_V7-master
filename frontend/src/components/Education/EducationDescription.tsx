@@ -5,14 +5,13 @@ const EducationDescription = () => {
     const Lessons = [
         {
             id: 1,
-            lessonName: "Broken Access Control",
-            description: "Access control enforces policy such that users cannot act outside of their intended permissions.",
+            lessonName: 'Broken Access Control',
+            description: 'Access control enforces policy such that users cannot act outside of their intended permissions.',
             testsId: [1],
             
             PrevalenceLevel: 2,
             ExploitAbilityLevel: 2,
             ImpactLevel: 2,
-
         },
         {
             id: 2,
@@ -42,7 +41,7 @@ const EducationDescription = () => {
 
             PrevalenceLevel: 3,
             ExploitAbilityLevel: 1,
-            ImpactLevel: 3,
+            ImpactLevel: 2,
         },
         {
             id: 5,
@@ -50,7 +49,7 @@ const EducationDescription = () => {
             description: "Pre-coding activities are critical for the design of secure software. The design phase of you development lifecycle should gather security requirements and model threats, and development time should be budgeted to allow for these requirements to be met. ",
             testsId: [5],
 
-            PrevalenceLevel: 3,
+            PrevalenceLevel: 2,
             ExploitAbilityLevel: 3,
             ImpactLevel: 1,
         },

@@ -1,0 +1,14 @@
+.AccountContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.AccountContent div:first-child {
+    width: 35%;
+}
+
+.AccountContent div:last-child {
+    width: 55%;
+}

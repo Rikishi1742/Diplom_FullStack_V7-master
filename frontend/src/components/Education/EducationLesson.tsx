@@ -6,7 +6,7 @@ import { UserContext, LoginStatus } from "../../context/UserContext";
 import { useContext } from 'react';
 
 const EducationLesson = (props) => {
-    const { userPayload, loginStatus, setUserDataByDispatch,  } = useContext(UserContext);
+    const { loginStatus } = useContext(UserContext);
     
     return (
         <>

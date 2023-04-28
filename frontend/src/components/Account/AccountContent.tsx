@@ -1,10 +1,20 @@
 import { useParams } from "react-router-dom";
+import './AccountContent.css';
 
 const AccountContent = () => {
     const { UserId } = useParams();
+
     return (
         <div className="Container">
-            <div>Account {UserId} </div>
+            <div className="AccountContent">
+                <div>
+                    
+                </div>
+
+                <div>
+
+                </div>
+            </div>
         </div>
     );
 }

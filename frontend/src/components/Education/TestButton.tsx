@@ -45,7 +45,7 @@ const TestButton = (props) => {
             <div className="TestButton">
                 <h2>EXPLOITABILITY {ExploitAbilityLevelText}</h2>
                 <div className="LevelIcon">
-                    <IssueExploitabilitLevel quantity={props.items.PrevalenceLevel} />
+                    <IssueExploitabilitLevel quantity={props.items.ExploitAbilityLevel} />
                 </div>
             </div>
             <div className="TestButton">
